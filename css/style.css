@@ -35,6 +35,25 @@ ul {
     *zoom: 1;
 }
 
+.fixed {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    margin-left: 620px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.fixed a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: #83d8eb;
+    border: 2px solid #83d8eb;
+    border-radius: 20px;
+}
+
 .header {
     height: 100px;
 }
@@ -55,13 +74,13 @@ ul {
 
 .nav {
     float: left;
-    margin-left: 60px;
+    margin-left: 100px;
     /*background-color: pink;*/
 }
 
 .nav ul li {
     float: left;
-    margin: 30px 15px;
+    margin: 29px 30px;
     line-height: 42px;
     /*margin-left: 50px;*/
     /*margin-right: 50px;*/
@@ -83,7 +102,7 @@ ul {
 
 .search {
     float: left;
-    margin: 30px 0 0 90px;
+    margin: 30px 0 0 120px;
     background-color: pink;
 }
 
@@ -131,8 +150,78 @@ ul {
     background-color: pink;
 }
 
-/*.main {*/
-/*    height: 300px;*/
-/*    margin-top: 10px;*/
-/*    background-color: #fff;*/
-/*}*/
+.text {
+    line-height: 400px;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3000px;
+    margin-top: 10px;
+}
+
+.nav-left {
+    position: sticky;
+    top: 10px;
+    height: 640px;
+    width: 310px;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.content {
+    height: 3000px;
+    width: 1200px;
+    margin-left: 10px;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.nav-right {
+    position: sticky;
+    top: 10px;
+    height: 500px;
+    width: 310px;
+    margin-left: 10px;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.footer {
+    height: 400px;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: pink;
+}
+
+.copyright {
+    height: 100px;
+    margin: 150px auto;
+    /*background-color: #fff;*/
+}
+
+.copyright .img {
+    float: left;
+    height: 100px;
+    width: 100px;
+    padding-left: 50px;
+}
+
+.copyright h1 {
+    float: right;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+    color: white;
+    padding-right: 50px;
+}
+
+.copyright .img img {
+    width: 100%;
+    height: 100%;
+}
