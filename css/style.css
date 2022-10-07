@@ -166,12 +166,156 @@ ul {
 }
 
 .nav-left {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    /*background-color: skyblue;*/
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    height: 188px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.personal-header {
+    height: 64px;
+    background-color: pink;
+}
+
+.personal-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.personal-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 26px;
+    flex: 1;
+}
+
+.personal-main-content {
+    position: relative;
+    height: 20px;
+}
+
+.personal-main-content-avatar {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.personal-main-content-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.personal-main-content-id {
+    position: absolute;
+    top: -20px;
+    left: 65px;
+    font-size: 13px;
+    line-height: 56px;
+}
+
+.personal-main-content-id:visited {
+    color: black;
+}
+
+.personal-main-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.personal-main-stats-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 46px;
+}
+
+.personal-main-stats-item-number {
+    font-weight: 700;
+    line-height: 19px;
+    font-size: 14px;
+    color: #222;
+}
+
+.personal-main-stats-item-title {
+    font-size: 12px;
+    color: #99a2aa;
+}
+
+.users {
     position: sticky;
     top: 10px;
-    height: 640px;
-    width: 310px;
-    background-color: skyblue;
+    padding: 16px;
+    background-color: #fff;
     border-radius: 10px;
+}
+
+.user-title h3 {
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 42px;
+    color: pink;
+}
+
+.user-title a {
+    float: right;
+    margin-right: 10px;
+    line-height: 42px;
+    font-size: 14px;
+    color: pink;
+}
+
+.friend {
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.friend-avatar {
+    float: left;
+    height: 45px;
+    width: 45px;
+    padding-left: 10px;
+}
+
+.friend-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.friend-info {
+    float: left;
+}
+
+.friend-info h5 {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.friend-info p {
+    font-size: 12px;
 }
 
 .content {
