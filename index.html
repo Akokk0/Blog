@@ -6,9 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="bg"></div>
     <!--固定位置-->
     <div class="fixed">
         <a href="#top">回到顶部</a>
@@ -44,16 +46,17 @@
     <!--banner区域-->
     <div class="banner">
         <!--版心区域-->
-        <div class="w text">
-            Welcome to my personal blog
+        <div class="w text animate__animated animate__slideInDown">
+            よこそう私のブログへ
         </div>
     </div>
     <!--主体区域-->
     <div class="main">
+        <!--左导航栏-->
         <div class="nav-left">
             <div class="personal">
                 <div class="personal-header">
-                    <img src="" alt="background-img">
+                    <img src="img/1.png" alt="background-img">
                 </div>
                 <div class="personal-main">
                     <div class="personal-main-content">
@@ -92,7 +95,7 @@
             </div>
             <div class="users">
                 <div class="user-title clearfix">
-                    <h3>当前在线用户 (2)</h3>
+                    <h3>当前在线好友 (2)</h3>
                     <a href="#">更多 &gt;</a>
                 </div>
                 <div class="friends">
@@ -117,10 +120,62 @@
                 </div>
             </div>
         </div>
-        <div class="content"></div>
+        <!--主体内容-->
+        <div class="content">
+            <!--博客发布-->
+            <div class="blog-publishing">
+                <!--博客内容-->
+                <div class="blog-textarea" contenteditable placeholder='有什么想和大家分享的？'></div>
+                <!--控制按钮-->
+                <div class="blog-publishing-control">
+                    <!--工具箱-->
+                    <div class="blog-publishing-tools">
+                        <div class="blog-publishing-tools-pic blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-at blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-poll blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-timing-setting blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-alert blog-publishing-tool"></div>
+                    </div>
+                    <!--发布按钮-->
+                    <div class="blog-publishing-headquarters">
+                        <div class="blog-publishing-action"> 发布 </div>
+                    </div>
+                </div>
+            </div>
+            <!--user-list-->
+            <div class="blog-user-list">
+                <div class="blog-user-list-prev"></div>
+                <div class="blog-user-list-window"></div>
+                <div class="blog-user-list-next"></div>
+            </div>
+        </div>
+        <!--右导航栏-->
         <div class="nav-right">
-            <div class="broadcast"></div>
-            <div class="article"></div>
+            <div class="broadcast">
+                <h3>公告栏</h3>
+                <div class="broadcast-img">
+                    <img src="img/1.png" alt="broadcast">
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-title">
+                    推荐
+                </div>
+                <div class="article-items">
+                    <div class="article-item">
+                        <h4>faker退役后想竞选总统，你怎么看</h4>
+                        <p>313.1万浏览·4283讨论</p>
+                    </div>
+                    <div class="article-item">
+                        <h4>林书豪首秀拿下9分</h4>
+                        <p>37.6万浏览·464讨论</p>
+                    </div>
+                    <div class="article-item">
+                        <h4>王楚钦“让二追三”，中国男乒晋级四强</h4>
+                        <p>12.3万浏览·209讨论</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--底部区域-->
