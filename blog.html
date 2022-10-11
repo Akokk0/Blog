@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="bg"></div>
+    <!--固定位置-->
+    <div class="fixed">
+        <a href="#top">回到顶部</a>
+    </div>
+    <!--头部区域-->
+    <div class="header w">
+        <!--logo区域-->
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--导航栏区域-->
+        <div class="nav clearfix">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
+            </ul>
+        </div>
+        <!--搜索框-->
+        <div class="search">
+            <input type="text" placeholder="请输入关键词">
+            <button></button>
+        </div>
+        <!--id区域-->
+        <div class="id">
+            Akokko
+        </div>
+        <!--头像区域-->
+        <div class="avatar">
+            <img src="img/avatar.png" alt="avatar">
+        </div>
+    </div>
+    <!--banner区域-->
+    <div class="banner">
+        <!--版心区域-->
+        <div class="w text animate__animated animate__slideInDown">
+            よこそう私のブログへ
+        </div>
+    </div>
+    <!--主体区域-->
+    <div class="main">
+        <!--左导航栏-->
+        <div class="nav-left">
+            <div class="personal">
+                <div class="personal-header">
+                    <img src="img/personal.png" alt="background-img">
+                </div>
+                <div class="personal-main">
+                    <div class="personal-main-content">
+                        <a class="personal-main-content-avatar" href="#">
+                            <img src="img/avatar.png" alt="avatar">
+                        </a>
+                        <a class="personal-main-content-id" href="#">Akokko</a>
+                    </div>
+                    <div class="personal-main-stats">
+                        <a href="#" class="personal-main-stats-item">
+                            <div class="personal-main-stats-item-number">
+                                100
+                            </div>
+                            <div class="personal-main-stats-item-title">
+                                关注
+                            </div>
+                        </a>
+                        <a href="#" class="personal-main-stats-item">
+                            <div class="personal-main-stats-item-number">
+                                5678
+                            </div>
+                            <div class="personal-main-stats-item-title">
+                                粉丝
+                            </div>
+                        </a>
+                        <a href="#" class="personal-main-stats-item">
+                            <div class="personal-main-stats-item-number">
+                                56
+                            </div>
+                            <div class="personal-main-stats-item-title">
+                                博客
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="users">
+                <div class="user-title clearfix">
+                    <h3> 当前在线好友 (2) </h3>
+                    <a href="#"> 更多 &gt; </a>
+                </div>
+                <div class="friends">
+                    <div class="friend">
+                        <div class="friend-avatar">
+                            <img src="img/avatar.png" alt="avatar">
+                        </div>
+                        <div class="friend-info">
+                            <h5> しいなマシロ </h5>
+                            <p> プランC </p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-avatar">
+                            <img src="img/avatar.png" alt="avatar">
+                        </div>
+                        <div class="friend-info">
+                            <h5> 桜沢墨 </h5>
+                            <p> かわいいね </p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-avatar">
+                            <img src="img/avatar.png" alt="avatar">
+                        </div>
+                        <div class="friend-info">
+                            <h5> かるいざわけい </h5>
+                            <p> 好きだよ </p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-avatar">
+                            <img src="img/avatar.png" alt="avatar">
+                        </div>
+                        <div class="friend-info">
+                            <h5> Akokko </h5>
+                            <p> 俺はガンダムで行く </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--主体内容-->
+        <div class="content">
+            <!--博客发布-->
+            <div class="blog-publishing">
+                <!--博客内容-->
+                <div class="blog-textarea" contenteditable placeholder='有什么想和大家分享的？'></div>
+                <!--控制按钮-->
+                <div class="blog-publishing-control">
+                    <!--工具箱-->
+                    <div class="blog-publishing-tools">
+                        <div class="blog-publishing-tools-pic blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-at blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-poll blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-timing-setting blog-publishing-tool"></div>
+                        <div class="blog-publishing-tools-alert blog-publishing-tool"></div>
+                    </div>
+                    <!--发布按钮-->
+                    <div class="blog-publishing-headquarters">
+                        <div class="blog-publishing-action"> 发布 </div>
+                    </div>
+                </div>
+            </div>
+            <!--user-list-->
+            <div class="blog-user-list">
+                <div class="blog-user-list-prev"></div>
+                <div class="blog-user-list-window">
+                    <div class="blog-user-list-content">
+                        <div class="blog-user-list-item blog-user-list-item-active">
+                            <div class="blog-user-list-item-face all">
+                                <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iZHluYW1pYyIgZGF0YS1uYW1lPSLliqjmgIEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij4KIDxwYXRoIGQ9Ik0xMiwxIEMxMi42MDMyNzI1LDEgMTMuMDkyMzIxNSwxLjQ5MDE1MjcxIDEzLjA5MjMyMTUsMi4wOTQ3ODY3MyBMMTMuMDkxOTQxNSw3LjM0NDQ4NjcyIEMxNC4xNDA1NzQ3LDYuNDgwMDg3NDcgMTUuNDg2Mzg4NCw1Ljk2MDY0NzgyIDE2Ljk1MzgzOTIsNS45NjA2NDc4MiBDMjAuMjk5OTY1LDUuOTYwNjQ3ODIgMjMuMDEzNjQ1MSw4LjY2MTQ0ODUxIDIzLjAxMzY0NTEsMTEuOTk0NDI0IEMyMy4wMTM2NDUxLDEyLjU5NzY5NjUgMjIuNTIzNDkyNCwxMy4wODY3NDU1IDIxLjkxODg1ODQsMTMuMDg2NzQ1NSBMMjEuOTE4ODU4NCwxMy4wODY3NDU1IEwxNi42NDkwOTIzLDEzLjA4NjA3MzYgQzE3LjUyMTQxMzYsMTQuMTM0MTkwOSAxOC4wNDYxNjA4LDE1LjQ4MjAwMDQgMTguMDQ2MTYwOCwxNi45NTI2MDY2IEMxOC4wNDYxNjA4LDIwLjI5MzEwNDEgMTUuMzM4NTkxMiwyMyAxMiwyMyBDMTEuMzk2NzI3NSwyMyAxMC45MDc2Nzg1LDIyLjUwOTg0NzMgMTAuOTA3Njc4NSwyMS45MDUyMTMzIEwxMC45MDc2Nzg1LDIxLjkwNTIxMzMgTDEwLjkwODA1ODUsMTYuNjU1NTEzMyBDOS44NTk0MjUzMiwxNy41MTk5MTI1IDguNTEzNjExNTYsMTguMDM5MzUyMiA3LjA0NjE2MDc3LDE4LjAzOTM1MjIgQzMuNzAwMDM0OTksMTguMDM5MzUyMiAwLjk4NjM1NDg2MiwxNS4zMzg1NTE1IDAuOTg2MzU0ODYyLDEyLjAwNTU3NiBDMC45ODYzNTQ4NjIsMTEuNDAyMzAzNSAxLjQ3NjUwNzU4LDEwLjkxMzI1NDUgMi4wODExNDE1OSwxMC45MTMyNTQ1IEw3LjM1MDkwNzc0LDEwLjkxMzkyNjQgQzYuNDc4NTg2NDIsOS44NjU4MDkwNSA1Ljk1MzgzOTIzLDguNTE3OTk5NTYgNS45NTM4MzkyMyw3LjA0NzM5MzM2IEM1Ljk1MzgzOTIzLDMuNzA2ODk1OTMgOC42NjE0MDg4NCwxIDEyLDEgWiBNMTMuMDkyMzIxNSwxMy4yNTEyODMzIEwxMy4wOTIzMjE1LDIwLjY1MzkzIEMxNC42OTMzMzc4LDIwLjE4MzEyNDMgMTUuODYxNTE3NywxOC43MDM3ODkzIDE1Ljg2MTUxNzcsMTYuOTUyNjA2NiBDMTUuODYxNTE3NywxNS4yMDE0MjM5IDE0LjY5MzMzNzgsMTMuNzIyMDg4OSAxMy4wOTIzMjE1LDEzLjI1MTI4MzMgTDEzLjA5MjMyMTUsMTMuMjUxMjgzMyBaIE0xMC43NTgzMTk4LDEzLjA5Nzg5NzYgTDMuMzM0MDAxNzYsMTMuMDk3ODk3NiBDMy44MDczMzQ5MywxNC42OTEzNjk2IDUuMjg5NzgyMDYsMTUuODU0NzA5MSA3LjA0NjE2MDc3LDE1Ljg1NDcwOTEgQzguODAyNTM5NDgsMTUuODU0NzA5MSAxMC4yODQ5ODY2LDE0LjY5MTM2OTYgMTAuNzU4MzE5OCwxMy4wOTc4OTc2IFogTTE2Ljk1MzgzOTIsOC4xNDUyOTA5MiBDMTUuMTk3NDYwNSw4LjE0NTI5MDkyIDEzLjcxNTAxMzQsOS4zMDg2MzA0MSAxMy4yNDE2ODAyLDEwLjkwMjEwMjQgTDEzLjI0MTY4MDIsMTAuOTAyMTAyNCBMMjAuNjY1OTk4MiwxMC45MDIxMDI0IEMyMC4xOTI2NjUxLDkuMzA4NjMwNDEgMTguNzEwMjE3OSw4LjE0NTI5MDkyIDE2Ljk1MzgzOTIsOC4xNDUyOTA5MiBaIE0xMC45MDc2Nzg1LDMuMzQ2MDcgQzkuMzA2NjYyMjQsMy44MTY4NzU2NiA4LjEzODQ4MjMyLDUuMjk2MjEwNjYgOC4xMzg0ODIzMiw3LjA0NzM5MzM2IEM4LjEzODQ4MjMyLDguNzk4NTc2MDcgOS4zMDY2NjIyNCwxMC4yNzc5MTExIDEwLjkwNzY3ODUsMTAuNzQ4NzE2NyBMMTAuOTA3Njc4NSwzLjM0NjA3IFoiIGlkPSLlkIjlubblvaLnirYiIGZpbGw9IiMwMGExZDYiPjwvcGF0aD4KPC9zdmc+">
+                            </div>
+                            <div class="blog-user-list-item-name"> 全部博客 </div>
+                        </div>
+                        <div class="blog-user-list-item">
+                            <div class="blog-user-list-item-face">
+                                <div class="blog-item-face-img blog-awesome-img" style="background-image: url('img/avatar.png');"></div>
+                            </div>
+                            <div class="blog-user-list-item-name blog-ellipsis"> Akokko </div>
+                        </div>
+                        <div class="blog-user-list-item">
+                            <div class="blog-user-list-item-face">
+                                <div class="blog-item-face-img blog-awesome-img" style="background-image: url('img/avatar.png');"></div>
+                            </div>
+                            <div class="blog-user-list-item-name blog-ellipsis"> Akokko </div>
+                        </div>
+                        <div class="blog-user-list-item">
+                            <div class="blog-user-list-item-face">
+                                <div class="blog-item-face-img blog-awesome-img" style="background-image: url('img/avatar.png');"></div>
+                            </div>
+                            <div class="blog-user-list-item-name blog-ellipsis"> Akokko </div>
+                        </div>
+                        <div class="blog-user-list-item">
+                            <div class="blog-user-list-item-face">
+                                <div class="blog-item-face-img blog-awesome-img" style="background-image: url('img/avatar.png');"></div>
+                            </div>
+                            <div class="blog-user-list-item-name blog-ellipsis"> Akokko </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-user-list-next"></div>
+            </div>
+            <!--dynamic-->
+            <div class="blog-dynamic-list">
+                <div class="blog-dynamic-list-item">
+                    <div class="blog-dynamic-item">
+                        <div class="blog-dynamic-item-main">
+                            <div class="blog-dynamic-item-avatar">
+                                <div class="blog-avatar">
+                                    <img src="img/avatar.png" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-header">
+                                <div class="blog-dynamic-item-text">
+                                    <div class="blog-dynamic-item-text-title"> しいなマシロ </div>
+                                </div>
+                                <div class="blog-time"> 13分钟前 · 发表了博客 </div>
+                            </div>
+                            <div class="blog-dynamic-item-body">
+                                <div class="blog-dynamic-content">
+                                    <div class="blog-dynamic-content-orig">
+                                        <div class="blog-dynamic-content-orig-major">
+                                            <a href="#" class="blog-dynamic-blog">
+                                                <div class="blog-dynamic-blog-header">
+                                                    <div class="blog-dynamic-blog-badge"> 博客 </div>
+                                                    <div class="blog-dynamic-blog-cover">
+                                                        <img src="img/cover.png" alt="cover" class="blog-awesome-img">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-dynamic-blog-body">
+                                                    <div class="blog-dynamic-blog-title blog-ellipsis">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-desc">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-stat">
+                                                        <div class="blog-dynamic-blog-stat-item read">
+                                                            <i></i>
+                                                            5037
+                                                        </div>
+                                                        <div class="blog-dynamic-blog-stat-item comment">
+                                                            <i></i>
+                                                            37
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-footer">
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action forward">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action commented">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action like">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-dynamic-item">
+                        <div class="blog-dynamic-item-main">
+                            <div class="blog-dynamic-item-avatar">
+                                <div class="blog-avatar">
+                                    <img src="img/avatar.png" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-header">
+                                <div class="blog-dynamic-item-text">
+                                    <div class="blog-dynamic-item-text-title"> しいなマシロ </div>
+                                </div>
+                                <div class="blog-time"> 13分钟前 · 发表了博客 </div>
+                            </div>
+                            <div class="blog-dynamic-item-body">
+                                <div class="blog-dynamic-content">
+                                    <div class="blog-dynamic-content-orig">
+                                        <div class="blog-dynamic-content-orig-major">
+                                            <a href="#" class="blog-dynamic-blog">
+                                                <div class="blog-dynamic-blog-header">
+                                                    <div class="blog-dynamic-blog-badge"> 博客 </div>
+                                                    <div class="blog-dynamic-blog-cover">
+                                                        <img src="img/cover.png" alt="cover" class="blog-awesome-img">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-dynamic-blog-body">
+                                                    <div class="blog-dynamic-blog-title blog-ellipsis">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-desc">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-stat">
+                                                        <div class="blog-dynamic-blog-stat-item read">
+                                                            <i></i>
+                                                            5037
+                                                        </div>
+                                                        <div class="blog-dynamic-blog-stat-item comment">
+                                                            <i></i>
+                                                            37
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-footer">
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action forward">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action commented">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action like">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-dynamic-item">
+                        <div class="blog-dynamic-item-main">
+                            <div class="blog-dynamic-item-avatar">
+                                <div class="blog-avatar">
+                                    <img src="img/avatar.png" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-header">
+                                <div class="blog-dynamic-item-text">
+                                    <div class="blog-dynamic-item-text-title"> しいなマシロ </div>
+                                </div>
+                                <div class="blog-time"> 13分钟前 · 发表了博客 </div>
+                            </div>
+                            <div class="blog-dynamic-item-body">
+                                <div class="blog-dynamic-content">
+                                    <div class="blog-dynamic-content-orig">
+                                        <div class="blog-dynamic-content-orig-major">
+                                            <a href="#" class="blog-dynamic-blog">
+                                                <div class="blog-dynamic-blog-header">
+                                                    <div class="blog-dynamic-blog-badge"> 博客 </div>
+                                                    <div class="blog-dynamic-blog-cover">
+                                                        <img src="img/cover.png" alt="cover" class="blog-awesome-img">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-dynamic-blog-body">
+                                                    <div class="blog-dynamic-blog-title blog-ellipsis">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-desc">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-stat">
+                                                        <div class="blog-dynamic-blog-stat-item read">
+                                                            <i></i>
+                                                            5037
+                                                        </div>
+                                                        <div class="blog-dynamic-blog-stat-item comment">
+                                                            <i></i>
+                                                            37
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-footer">
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action forward">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action commented">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action like">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-dynamic-item">
+                        <div class="blog-dynamic-item-main">
+                            <div class="blog-dynamic-item-avatar">
+                                <div class="blog-avatar">
+                                    <img src="img/avatar.png" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-header">
+                                <div class="blog-dynamic-item-text">
+                                    <div class="blog-dynamic-item-text-title"> しいなマシロ </div>
+                                </div>
+                                <div class="blog-time"> 13分钟前 · 发表了博客 </div>
+                            </div>
+                            <div class="blog-dynamic-item-body">
+                                <div class="blog-dynamic-content">
+                                    <div class="blog-dynamic-content-orig">
+                                        <div class="blog-dynamic-content-orig-major">
+                                            <a href="#" class="blog-dynamic-blog">
+                                                <div class="blog-dynamic-blog-header">
+                                                    <div class="blog-dynamic-blog-badge"> 博客 </div>
+                                                    <div class="blog-dynamic-blog-cover">
+                                                        <img src="img/cover.png" alt="cover" class="blog-awesome-img">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-dynamic-blog-body">
+                                                    <div class="blog-dynamic-blog-title blog-ellipsis">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-desc">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-stat">
+                                                        <div class="blog-dynamic-blog-stat-item read">
+                                                            <i></i>
+                                                            5037
+                                                        </div>
+                                                        <div class="blog-dynamic-blog-stat-item comment">
+                                                            <i></i>
+                                                            37
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-footer">
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action forward">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action commented">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action like">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-dynamic-item">
+                        <div class="blog-dynamic-item-main">
+                            <div class="blog-dynamic-item-avatar">
+                                <div class="blog-avatar">
+                                    <img src="img/avatar.png" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-header">
+                                <div class="blog-dynamic-item-text">
+                                    <div class="blog-dynamic-item-text-title"> しいなマシロ </div>
+                                </div>
+                                <div class="blog-time"> 13分钟前 · 发表了博客 </div>
+                            </div>
+                            <div class="blog-dynamic-item-body">
+                                <div class="blog-dynamic-content">
+                                    <div class="blog-dynamic-content-orig">
+                                        <div class="blog-dynamic-content-orig-major">
+                                            <a href="#" class="blog-dynamic-blog">
+                                                <div class="blog-dynamic-blog-header">
+                                                    <div class="blog-dynamic-blog-badge"> 博客 </div>
+                                                    <div class="blog-dynamic-blog-cover">
+                                                        <img src="img/cover.png" alt="cover" class="blog-awesome-img">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-dynamic-blog-body">
+                                                    <div class="blog-dynamic-blog-title blog-ellipsis">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-desc">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-stat">
+                                                        <div class="blog-dynamic-blog-stat-item read">
+                                                            <i></i>
+                                                            5037
+                                                        </div>
+                                                        <div class="blog-dynamic-blog-stat-item comment">
+                                                            <i></i>
+                                                            37
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-footer">
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action forward">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action commented">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action like">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-dynamic-item">
+                        <div class="blog-dynamic-item-main">
+                            <div class="blog-dynamic-item-avatar">
+                                <div class="blog-avatar">
+                                    <img src="img/avatar.png" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-header">
+                                <div class="blog-dynamic-item-text">
+                                    <div class="blog-dynamic-item-text-title"> しいなマシロ </div>
+                                </div>
+                                <div class="blog-time"> 13分钟前 · 发表了博客 </div>
+                            </div>
+                            <div class="blog-dynamic-item-body">
+                                <div class="blog-dynamic-content">
+                                    <div class="blog-dynamic-content-orig">
+                                        <div class="blog-dynamic-content-orig-major">
+                                            <a href="#" class="blog-dynamic-blog">
+                                                <div class="blog-dynamic-blog-header">
+                                                    <div class="blog-dynamic-blog-badge"> 博客 </div>
+                                                    <div class="blog-dynamic-blog-cover">
+                                                        <img src="img/cover.png" alt="cover" class="blog-awesome-img">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-dynamic-blog-body">
+                                                    <div class="blog-dynamic-blog-title blog-ellipsis">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-desc">
+                                                        【英雄联盟】2022全球总决赛小组赛第三日，赛事速看：DRX vs TES
+                                                    </div>
+                                                    <div class="blog-dynamic-blog-stat">
+                                                        <div class="blog-dynamic-blog-stat-item read">
+                                                            <i></i>
+                                                            5037
+                                                        </div>
+                                                        <div class="blog-dynamic-blog-stat-item comment">
+                                                            <i></i>
+                                                            37
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-dynamic-item-footer">
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action forward">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action commented">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                                <div class="blog-dynamic-item-action">
+                                    <div class="blog-dynamic-action like">
+                                        <i></i>
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右导航栏-->
+        <div class="nav-right">
+            <div class="broadcast">
+                <h3>公告栏</h3>
+                <div class="broadcast-img">
+                    <img src="img/1.png" alt="broadcast">
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-title">
+                    推荐
+                </div>
+                <div class="article-items">
+                    <div class="article-item">
+                        <h4>faker退役后想竞选总统，你怎么看</h4>
+                        <p>313.1万浏览·4283讨论</p>
+                    </div>
+                    <div class="article-item">
+                        <h4>林书豪首秀拿下9分</h4>
+                        <p>37.6万浏览·464讨论</p>
+                    </div>
+                    <div class="article-item">
+                        <h4>王楚钦“让二追三”，中国男乒晋级四强</h4>
+                        <p>12.3万浏览·209讨论</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部区域-->
+    <div class="footer">
+        <!--版心位置-->
+        <div class="w">
+            <!--版权区域-->
+            <div class="copyright">
+                <div class="img">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <h1>@PCG Game Union Copyright</h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"/>
+</html>
