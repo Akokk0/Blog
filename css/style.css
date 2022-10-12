@@ -71,6 +71,7 @@ ul {
 
 .header {
     height: 100px;
+    /*background-color: #fff;*/
 }
 
 .logo {
@@ -78,7 +79,7 @@ ul {
     height: 50px;
     width: 50px;
     margin: 25px 0 0 20px;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     border-radius: 30px;
 }
 
@@ -110,7 +111,7 @@ ul {
     padding: 0 10px;
     font-size: 15px;
     color: #050505;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border-radius: 15px;
     transition: color .2s ease;
 }
@@ -489,6 +490,12 @@ ul {
     height: 32px;
     width: 60px;
     justify-content: center;
+    transition: background-color .2s ease;
+}
+
+.blog-publishing-action:hover {
+    background-color: #16b4e3;
+    transition: background-color .2s ease;
 }
 
 .blog-user-list {

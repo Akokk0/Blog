@@ -31,6 +31,21 @@ ul {
     *zoom: 1;
 }
 
+.bg {
+    pointer-events: none;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 56.25vw;
+    transform: translateX(-50%);
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
 .blog {
     display: flex;
     align-items: center;
@@ -160,12 +175,28 @@ ul {
     color: black;
 }
 
+.banner {
+    width: 100%;
+    height: 400px;
+    /*text-align: left;*/
+    font-family: HYZhengYuan;
+    background-color: pink;
+    /*opacity: .8;*/
+}
+
+.text {
+    line-height: 400px;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
 .blog-main {
     display: flex;
     justify-content: space-around;
     width: 1980px;
     margin-top: 10px;
-
 }
 
 .blog-swiper {
@@ -229,14 +260,17 @@ ul {
     margin-top: 12px;
     font-size: 16px;
     font-weight: 700;
-    color: #18191c;
     cursor: pointer;
-    transition: color .2s ease;
 }
 
-.blog-item-title:hover {
+.blog-item-title a {
+    color: #18191c;
+    transition: color .2s linear;
+}
+
+.blog-item-title:hover a {
     color: #00a1d6;
-    transition: color .2s ease;
+    transition: color .2s linear;
 }
 
 .blog-item-author {
@@ -261,6 +295,9 @@ ul {
 
 .blog-content {
     width: 1980px;
+    padding-top: 30px;
+    margin-top: 10px;
+    border-top: #f1f2f3 solid 4px;
 }
 
 .blog-content .blog-items {
@@ -269,4 +306,43 @@ ul {
 
 .blog-content .blog-items .blog-item {
     margin-left: 0;
+}
+
+.blog-footer {
+    width: 100%;
+    background-color: pink;
+}
+
+.footer {
+    height: 400px;
+    /*margin-top: 10px;*/
+    overflow: hidden;
+    background-color: pink;
+}
+
+.copyright {
+    height: 100px;
+    margin: 150px auto;
+    /*background-color: #fff;*/
+}
+
+.copyright .img {
+    float: left;
+    height: 100px;
+    width: 100px;
+    padding-left: 50px;
+}
+
+.copyright h1 {
+    float: right;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+    color: white;
+    padding-right: 50px;
+}
+
+.copyright .img img {
+    width: 100%;
+    height: 100%;
 }
